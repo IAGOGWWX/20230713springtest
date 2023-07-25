@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body class="container">
+<!--<p th:utext="${name}" >name</p>-->
+<!--<p th:text="${name}">name</p>-->
+
+<!--<div th:object="${user}">-->
+<!--    <p>uid:<span th:text="*{uid}">uid</span></p>-->
+<!--    <p>uname:<span th:text="*{uname}">uname</span></p>-->
+<!--    <p>uname:<span th:text="*{uname}">Welcome to our grocery store uname</span></p>-->
+<!--    <p>uname:<span th:text="#{user.uname}">uname</span></p>-->
+<!--</div>-->
+
+
+<a th:href="@{/welcome}">welcome</a>
+    <p>uname:<span th:text="#{something}">something</span></p>
+</body>
+</html>

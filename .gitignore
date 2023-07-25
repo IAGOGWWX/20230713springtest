@@ -1,0 +1,16 @@
+# Project exclude paths
+/out/
+/springboot-01-hello/target/
+/springboot-05-mybatis/target/
+/springboot-06-listiner/target/
+/springboot-07-container/target/
+/springboot-08-servlet/target/
+/springboot-09-error/target/
+/springboot-10-logging/target/
+/springboot-11-swagger/target/
+/springboot-13-actuator_/target/
+/springboot-14-cache/target/
+/springboot-dome03/target/
+/springboot-jpa/target/
+/target/
+/templates/target/

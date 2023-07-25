@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-dome03" />
+        <module name="springboot-11-swagger" />
+        <module name="springboot-10-logging" />
+        <module name="springboot-01-hello" />
+        <module name="springboot-06-listiner" />
+        <module name="springboot-jpa" />
+        <module name="templates" />
+        <module name="springboot-05-mybatis" />
+        <module name="springboot-13-actuator_" />
+        <module name="springboot-08-servlet" />
+        <module name="springboot-14-cache" />
+        <module name="springboot-07-container" />
+        <module name="springboot-09-error" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-ending utf-8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="20230713springtest" options="-parameters" />
+      <module name="springboot-01-hello" options="-parameters" />
+      <module name="springboot-05-mybatis" options="-parameters" />
+      <module name="springboot-06-listiner" options="-parameters" />
+      <module name="springboot-07-container" options="-parameters" />
+      <module name="springboot-08-servlet" options="-parameters" />
+      <module name="springboot-09-error" options="-parameters" />
+      <module name="springboot-10-logging" options="-parameters" />
+      <module name="springboot-11-swagger" options="-parameters" />
+      <module name="springboot-13-actuator_" options="-parameters" />
+      <module name="springboot-14-cache" options="-parameters" />
+      <module name="springboot-dome03" options="-parameters" />
+      <module name="springboot-jpa" options="-parameters" />
+      <module name="templates" options="-parameters" />
+    </option>
+  </component>
+</project>

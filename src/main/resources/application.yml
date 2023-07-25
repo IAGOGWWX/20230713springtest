@@ -1,0 +1,9 @@
+
+jasypt:
+  encryptor:
+    password: 123456@!#$
+
+info:
+  username: ENC(q7EJwhri+7qWrgVpdC91Wg==)
+  password: ENC(6lgdjSZohOcqBDugThe8xg==)
+

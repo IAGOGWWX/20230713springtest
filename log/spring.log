@@ -1,0 +1,10 @@
+2023-07-23 14:57:10.508  INFO 36988 --- [main] com.jyl.LoggingSpringBootApplication     : Starting LoggingSpringBootApplication on LAPTOP-L0PP6IC1 with PID 36988 (D:\ideaProject\20230713springtest\springboot-10-logging\target\classes started by IAGOGWWX in D:\ideaProject\20230713springtest)
+2023-07-23 14:57:10.513  INFO 36988 --- [main] com.jyl.LoggingSpringBootApplication     : No active profile set, falling back to default profiles: default
+2023-07-23 14:57:11.248  INFO 36988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-07-23 14:57:11.266  INFO 36988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-23 14:57:11.266  INFO 36988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2023-07-23 14:57:11.351  INFO 36988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-23 14:57:11.351  INFO 36988 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 802 ms
+2023-07-23 14:57:11.482  INFO 36988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-23 14:57:11.597  INFO 36988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-07-23 14:57:11.599  INFO 36988 --- [main] com.jyl.LoggingSpringBootApplication     : Started LoggingSpringBootApplication in 1.415 seconds (JVM running for 2.05)
