@@ -7,9 +7,112 @@
 <body>
 
 
-<div th:insert="footer :: copy"></div>
-<div th:replace="footer :: copy"></div>
-<div th:include="footer :: copy"></div>
+<!--<div th:insert="footer :: copy"></div>-->
+<!--<div th:replace="footer :: copy"></div>-->
+<!--<div th:include="footer :: copy"></div>-->
 
+
+
+<p th:text="${user.uname} + ' is ' + ${user.uid}"></p>
+
+<p th:text="|${user.uname} is ${user.uid}|"></p>
+
+
+<p th:text="${msg}" th:if="${msg=='no'}">连用th:text 如果if成立内容会被 msg替换，只会显示msg值</span></p>
+
+<p th:if="${msg=='no'}"> 当msg == 'no' 时，显示内容， </p>
+<p th:text="${msg}" th:if="${msg=='no'}"> </p>
+
+<p th:unless="${msg=='yes'}"> 如果unless条件不成立显示内容 </p>
+<p th:text="${msg}" th:unless="${msg=='yes'}"> 连用th:text 如果unless条件不成立内容会被 msg替换，只会显示msg值</p>
+
+
+<div th:switch="${num}">
+    <p th:case="1"> one </p>
+    <p th:case="2"> two </p>
+    <p th:case="*"> star </p>
+</div>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>uid</th>
+        <th>uname</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="user:${list}">
+        <td th:text="${user.uid}">uid</td>
+        <td th:text="${user.uname}">uname</td>
+    </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>名字</th>
+        <th>index</th>
+        <th>count</th>
+        <th>size</th>
+        <th>current</th>
+        <th>even</th>
+        <th>odd</th>
+        <th>first</th>
+        <th>last</th>
+    </tr>
+    </thead>
+    <tbody
+    <tr th:each="data:${list}">
+        <td th:text="${data.uid}">name</td>
+        <td th:text="${data.uname}">age</td>
+        <td th:text="${dataStat.index}">index</td>
+        <td th:text="${dataStat.count}">count</td>
+        <td th:text="${dataStat.size}">size</td>
+        <td th:text="${dataStat.current}">current</td>
+        <td th:text="${dataStat.even}">even</td>
+        <td th:text="${dataStat.odd}">odd</td>
+        <td th:text="${dataStat.first}">first</td>
+        <td th:text="${dataStat.last}">last</td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{//cn.bing.com}">跳转外链</a>
+
+协议自动补全的使用方式
+
+以引用静态资源举例
+<script type="text/javascript" th:src="@{//code.jquery.com/jquery-3.4.1.min.js}"></script>
+
+
+<br>
+1)date:
+<p th:text="${date}"></p>
+<p th:text="${#dates.format(date,'yyyy-MM-dd HH:mm:ss')}"></p>
+
+<br>
+<p th:text="${#dates.createNow()}"></p>
+<p th:text="${#dates.createToday()}"></p>
+
+2) strings的使用
+<p th:text="${#strings.isEmpty(msg)}"></p>
+<p th:text="${#strings.length(msg)}"></p>
+<p th:text="${#strings.equals(msg,'yes')}"></p>
+
+
+<p> 加油，[[${info}]] </p>
+<p> 加油，<span th:text="${info}"></span> </p>
+
+
+<!--th:text =>  [[...]]-->
+<!--th:utext => [(...)]-->
+<script type="text/javascript" th:inline="javascript">
+
+    var info = /*[[${info}]]*/ "测试";
+    console.log(info);
+</script>
 </body>
 </html>
